@@ -76,6 +76,7 @@ test('loan contract', async t => {
     priceAuthority,
     periodNotifier,
     interestRate: 5,
+    interestPeriod: 5,
   };
 
   const { creatorInvitation: lendInvitation } = await E(zoe).startInstance(
